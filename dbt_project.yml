@@ -35,6 +35,8 @@ models:
   marts:
     dim:
       +materialized: table
+    fact:
+      +materialized: table    
   staging: 
     +materialized: view
 
