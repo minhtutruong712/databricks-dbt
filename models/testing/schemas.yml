@@ -1,7 +1,22 @@
 version: 2
 
+
 models:
-  - name: customers
+  - name: fact_orders
+    description: One record per order
+    columns:
+      - name: order_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests: 
+          - relationships:
+              field: customer_id
+              to: ref('dim_customers')
+
+  - name: dim_customers
     description: One record per customer
     columns:
       - name: customer_id
@@ -16,6 +31,15 @@ models:
     description: This model cleans up customer data
     columns:
       - name: customer_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_payments
+    description: This model cleans up payment data
+    columns:
+      - name: payment_id
         description: Primary key
         tests:
           - unique
