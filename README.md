@@ -2,7 +2,7 @@ Welcome to my dbt - Azure Databricks project!
 
 As this repository will present data model as sql files, configuration as yml files and data description as md files. Hope you find the right resource you need!
 
-### Using the starter project
+
 
 
 
