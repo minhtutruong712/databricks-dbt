@@ -2,7 +2,8 @@ Welcome to my dbt - Azure Databricks project!
 
 As this repository will present data model as sql files, configuration as yml files and data description as md files. Hope you find the right resource you need!
 
-### Using the starter project
+This project aims to provide a fundamental approach to ultilizing dbt in maintaining Data Quality for daily production environment, encompassing Databricks - data transformation platform and dbt - a data tool. For more details, please check out my work at link Medium: 
+https://medium.com/@minhttrng/how-i-start-from-scratch-configuring-dbt-azure-databricks-connection-to-optimize-my-model-quality-61b1dca6b965
 
 
 
